@@ -21,5 +21,21 @@
 
             return new string(array);
         }
+
+        public static string ToLowerEachWord(this string source)
+        {
+            if (string.IsNullOrEmpty(source))
+                return string.Empty;
+
+            var array = source.ToLower().ToCharArray();
+
+            for (var i = 0; i < array.Length; i++)
+            {
+                if (i == 0 || array[i - 1] == ' ')
+                    array[i] = char.ToLower(array[i]);
+            }
+
+            return new string(array);
+        }
     }
 }

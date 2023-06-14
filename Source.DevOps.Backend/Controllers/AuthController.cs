@@ -16,7 +16,7 @@ namespace Source.DevOps.Backend.Controllers
         [HttpGet(Name = "Login")]
         public IActionResult Login(string email, string password)
         {
-            if (email == "test@gmail.com" && password == "123456")
+            if (email == "test@gmail.com" && password == "1234567")
                 return Ok("success");
 
             return BadRequest("failed");

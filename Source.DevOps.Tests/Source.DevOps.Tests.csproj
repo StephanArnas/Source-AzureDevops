@@ -6,6 +6,8 @@
     <Nullable>enable</Nullable>
 
     <IsPackable>false</IsPackable>
+
+    <Description>Common extension for String behavior</Description>
   </PropertyGroup>
 
   <ItemGroup>
